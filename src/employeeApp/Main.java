@@ -10,14 +10,16 @@ public class Main {
      */
     private static void workWithData() {
         String[] initialHealthplans = new String[12];
+        String[] initialHealthplans2 = new String[12];
         Employee firstPerson = new Employee(1, "kerem karaman", "k@gmail.com", 12345, initialHealthplans);
+        Employee secondEmployee=new Employee(0,"jonathan the third","jo@gmail.com",12345,initialHealthplans2);
         firstPerson.addHealthplan(0, "böbrek");
         System.out.println("------");
         firstPerson.addHealthplan(2, "kalp");
         System.out.println(firstPerson);
         firstPerson.addHealthplan(2, "el");
         System.out.println(firstPerson);
-
+        System.out.println(secondEmployee);
         System.out.println("********** company");
         String[] initialDevelopers = new String[10];
         Company firstCompany = new Company(0, "Joe", 10000, initialDevelopers);
